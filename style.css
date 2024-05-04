@@ -1,0 +1,34 @@
+.list {
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+}
+.list__title {
+  transition: 1s;
+  position: relative;
+}
+.list__title:hover::before {
+  height: 100%;
+}
+.list__title::before {
+  position: absolute;
+  content: "";
+  height: 0px;
+  width: 1%;
+  background-color: rgb(110, 202, 255);
+  bottom: 0px;
+  left: -5px;
+  transition: 1s;
+}
+.list__title:hover::after {
+  height: 100%;
+}
+.list__title::after {
+  position: absolute;
+  content: "";
+  height: 0px;
+  width: 1%;
+  background-color: rgb(70, 103, 252);
+  top: -1px;
+  right: 115px;
+  transition: 1s;
+}
